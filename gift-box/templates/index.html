@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flasklight</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Create your own present!</h1>
+    <a>Click the first to choose your box color, and the second for ribbon!
+    </a>
+    <div class="flasklight-box">
+        <form action="/message" method="post">
+            <select type="text" name="box" placeholder="Action">
+            <option value="pink">Pink</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+            </select>
+            <select type="text" name="box" placeholder="Action">
+                <option value="pink">Pink</option>
+                <option value="green">Green</option>
+                <option value="yellow">Yellow</option>
+                <option value="blue">Blue</option>
+            </select>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>
